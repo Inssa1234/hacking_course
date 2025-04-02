@@ -10,7 +10,69 @@
   <script src="cdn.js"></script>
   <title>Hacking</title>
   <style>
-        button {
+      .btn2 {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        border: 2px solid #fefefe;
+        text-transform: uppercase;
+        color: #fefefe;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+      
+      .btn2::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - -2px);
+        background-color: #212121;
+        transition: 0.3s ease-out;
+        transform: scaleY(1);
+      }
+      
+      .btn2::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 50px);
+        background-color: #212121;
+        transition: 0.3s ease-out;
+        transform: scaleY(1);
+      }
+      
+      .btn2:hover::before {
+        transform: translateY(-25px);
+        height: 0;
+      }
+      
+      .btn2:hover::after {
+        transform: scaleX(0);
+        transition-delay: 0.15s;
+      }
+      
+      .btn2:hover {
+        border: 2px solid #fefefe;
+      }
+      
+      .btn2 span {
+        position: relative;
+        z-index: 3;
+      }
+      
+      #btnmd {
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+      }
+
+        #btnmd1 {
       font-family: inherit;
       font-size: 20px;
       background: royalblue;
@@ -26,31 +88,31 @@
       cursor: pointer;
     }
     
-    button span {
+    #btnmd1 span {
       display: block;
       margin-left: 0.3em;
       transition: all 0.3s ease-in-out;
     }
     
-    button svg {
+    #btnmd1 svg {
       display: block;
       transform-origin: center center;
       transition: transform 0.3s ease-in-out;
     }
     
-    button:hover .svg-wrapper {
+    #btnmd1:hover .svg-wrapper {
       animation: fly-1 0.6s ease-in-out infinite alternate;
     }
     
-    button:hover svg {
+    #btnmd1:hover svg {
       transform: translateX(1.2em) rotate(45deg) scale(1.1);
     }
     
-    button:hover span {
+    #btnmd1:hover span {
       transform: translateX(5em);
     }
     
-    button:active {
+    #btnmd1:active {
       transform: scale(0.95);
     }
     
@@ -72,7 +134,9 @@
       <img class="w-1/2" src="./favicon.svg" alt="">
     </div>
     <nav class="text-zinc-100 font-extrabold">
-      <a class="hover:text-zinc-500" href="#sub">Contact</a>
+      <button id="btnmd">
+        <a href="#" class="btn2"><span class="spn2">Contact</span></a>
+      </button>
     </nav>
   </header>
   <main style="background: url(./main_image.jpg) center/cover no-repeat;" class="h-5/6 w-screen">
@@ -137,7 +201,7 @@
                 placeholder="Entrer vos questions" name="message" required></textarea>
             </div>
             <div class="mt-8">
-              <button class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700">
+              <button id="btnmd1" class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700">
                 <div class="svg-wrapper-1">
                   <div class="svg-wrapper">
                     <svg
