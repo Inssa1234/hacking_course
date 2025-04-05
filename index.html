@@ -49,7 +49,7 @@
         left: -2px;
         width: calc(100% + 4px);
         height: calc(100% - -2px);
-        background-color: #020617;
+        background-color: #111827;
         transition: 0.3s ease-out;
         transform: scaleY(1);
       }
@@ -61,7 +61,7 @@
         left: -2px;
         width: calc(100% + 4px);
         height: calc(100% - 50px);
-        background-color: #020617;
+        background-color: #111827;
         transition: 0.3s ease-out;
         transform: scaleY(1);
       }
@@ -147,20 +147,22 @@
   </style>
 </head>
 
-<body class="w-screen h-screen bg-slate-950">
-  <header class="sticky top-0 h-1/6 py-0 m-0 bg-slate-950 px-7 z-10 flex justify-between items-center">
-    <div class="">
-      <img class="w-1/2 flex-shrink-0 animate-pulse" src="./favicon.svg" alt="">
-    </div>
-    <nav class="text-zinc-100 font-extrabold">
-      <button id="btnmd" class="bg-slate-950">
-        <a href="#sub" class="btn2 love-light-regular"><span class="spn2">Contact</span></a>
-      </button>
-    </nav>
-  </header>
-  <main style="background: url(./main_image.jpg) center/cover no-repeat;" class="h-5/6 w-screen flex justify-center items-end">
-    <a href="#sub" class="-lg flex size-10 animate-bounce items-center justify-center rounded-full bg-white p-2 ring-1 ring-gray-900/5 dark:bg-white/5 dark:ring-white/20"><svg class="size-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></a>
-  </main>
+<body class="w-screen h-screen bg-gray-900">
+  <div class="flex flex-col h-full">
+    <header class="sticky top-0 h-1/7 py-0 m-0 bg-gray-900 px-7 z-10 flex justify-between items-center">
+      <div class="">
+        <img class="w-1/2 flex-shrink-0 animate-pulse" src="./favicon.svg" alt="">
+      </div>
+      <nav class="text-zinc-100 font-extrabold">
+        <button id="btnmd" class="bg-slate-950">
+          <a href="#sub" class="btn2 love-light-regular"><span class="spn2">Contact</span></a>
+        </button>
+      </nav>
+    </header>
+    <main style="background: url(./main_image.jpg) center/cover no-repeat;" class="flex-1 w-screen flex justify-center items-end">
+      <a href="#sub" class="-lg flex size-10 animate-bounce items-center justify-center rounded-full bg-white p-2 ring-1 ring-gray-900/5 dark:bg-white/5 dark:ring-white/20"><svg class="size-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></a>
+    </main>
+  </div>
   <section id="sub" class="h-screen w-screen">
     <div class="h-full w-full p-0 m-0 bg-slate-900/40">
       <div class="contact">
