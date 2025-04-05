@@ -1,6 +1,2 @@
 version: 2
-updates:
-  - package-ecosystem: "npm"
-    directory: "/" # Répertoire contenant le fichier package.json
-    schedule:
-      interval: "weekly"
+updates: []
