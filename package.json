@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@oramacloud/client": "^2.1.4"
+  }
+}
