@@ -2,33 +2,9 @@
 <html lang=en_fr>
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@orama/wc-components@latest/dist/orama-ui/orama-ui.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@orama/wc-components@latest/dist/orama-ui/orama-ui.css" />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@orama/wc-components@latest/dist/orama-ui/orama-ui.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@orama/wc-components@latest/dist/cjs/orama-ui.cjs.js"></script>
-
-
-
-<script>
-  let open = false;
-  const searchBoxConfig = {
-    "resultsMap": {
-        "path": "path",
-        "title": "title",
-        "description": "description"
-    },
-    "colorScheme": "system",
-    "themeConfig": {}
-};
-
-  Object.assign(document.querySelector("orama-search-box"), {
-    ...searchBoxConfig,
-    open: open,
-    index: {
-      endpoint: "https://cloud.orama.run/v1/indexes/hacking-course-vercel-app-i4zm97",
-      api_key: "RaKUIgzeVyR8mt1w0nKiMSsvR3tRxMPi",
-    },
-  });
-</script>
     <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -197,6 +173,27 @@
             <orama-search-box></orama-search-box>
           </div>
         </div>
+        <script>
+          let open = false;
+          const searchBoxConfig = {
+            "resultsMap": {
+                "path": "path",
+                "title": "title",
+                "description": "description"
+            },
+            "colorScheme": "system",
+            "themeConfig": {}
+        };
+        
+          Object.assign(document.querySelector("orama-search-box"), {
+            ...searchBoxConfig,
+            open: open,
+            index: {
+              endpoint: "https://cloud.orama.run/v1/indexes/hacking-course-vercel-app-i4zm97",
+              api_key: "RaKUIgzeVyR8mt1w0nKiMSsvR3tRxMPi",
+            },
+          });
+        </script>
       <nav class="text-zinc-100 font-extrabold">
         <button id="btnmd" class="bg-slate-950">
           <a href="#sub" class="btn2 love-light-regular"><span class="spn2">Contact</span></a>
